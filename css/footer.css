@@ -1,0 +1,141 @@
+/* footer */
+
+footer {
+  padding: 37.5px 0 30px 0;
+  background-color: #073937;
+}
+
+.footer-wrap {
+  width: 1064px;
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-wrap > img {
+  filter: brightness(0) invert(1);
+  width: 129px;
+  margin-bottom: 40px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-list {
+  width: 183px;
+}
+
+.footer-list p {
+  color: #fffbf2;
+  opacity: 0.8;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+}
+
+.footer-list div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.footer-list a {
+  color: #fffbf2;
+  letter-spacing: -0.03rem;
+}
+
+.footer-sns {
+  max-height: 24px;
+  flex-direction: row !important;
+}
+
+.footer-sns img {
+  filter: brightness(0) invert(1);
+  height: 100%;
+}
+
+footer select {
+  margin: 16px 0 24px 0;
+  border: thin solid #fffbf2;
+  border-radius: 1000px;
+  padding: 10px 35px 10px 15px;
+  background-color: transparent;
+  color: #fffbf2;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, gray 0),
+    linear-gradient(135deg, gray 50%, transparent 0);
+  background-position: calc(100% - 20px), calc(100% - 15px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.copyright p,
+.copyright a {
+  color: #fffbf2;
+  font-size: 0.875rem;
+  letter-spacing: 0.005rem;
+  opacity: 0.8;
+}
+
+.copyright a {
+  white-space: nowrap;
+}
+
+.copyright div {
+  display: flex;
+  gap: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-wrap {
+    width: 736px;
+  }
+  .footer-list {
+    width: 129px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-wrap {
+    width: 544px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-wrap {
+    width: 355px;
+    padding: 10px;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer-list {
+    width: 100%;
+  }
+
+  .footer-list a {
+    font-size: 0.875rem;
+  }
+
+  .copyright {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .copyright div {
+    flex-wrap: wrap;
+  }
+}
