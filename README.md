@@ -2,7 +2,7 @@
 
 ## Click Demo
 
-https://jin2nim.github.io/Sonder-clone-frontend
+https://jin2nim.github.io/Sonder-clone-front
 
 ## Copyright
 
