@@ -87,7 +87,6 @@
 .select-wrap,
 .select-area {
   align-self: flex-end;
-  padding: 20px;
   background-color: #fffbf2;
   display: flex;
   align-items: center;
@@ -97,12 +96,157 @@
 
 .select-wrap {
   margin-bottom: -55px;
+  padding: 20px;
 }
 
 .select-area {
   border: 1px solid #073937;
   justify-content: space-between;
   background-color: #fcf5eb;
+}
+
+#city,
+#datePicker,
+#guests,
+#search {
+  padding: 20px;
+}
+
+#city {
+  position: relative;
+  border-radius: 100px 0 0 100px;
+}
+
+.city-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+.city-text svg path,
+.checkIn-text svg path,
+#guests svg path {
+  fill: #073937;
+}
+
+.city-option-container {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #fcf5eb;
+  padding: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px #ccc;
+  max-height: 250px;
+  overflow-y: auto;
+  display: none;
+}
+
+.city-option-container.active {
+  display: block;
+}
+
+/* city-text option */
+body:has(.city-option-container.active) {
+  #city {
+    background-color: #073937;
+  }
+  .city-text {
+    color: #fcf5eb;
+  }
+  .city-text svg path {
+    fill: #fcf5eb;
+  }
+}
+
+.city-option {
+  display: flex;
+  gap: 8px;
+  padding: 4px 20px;
+}
+.city-option span,
+.city-option p {
+  color: #073937;
+}
+
+.city-option:hover {
+  background-color: #073937;
+}
+
+.city-option:hover p,
+.city-option:hover span {
+  color: #fcf5eb;
+}
+
+.city-option p::first-letter {
+  text-transform: uppercase;
+}
+
+.checkIn-text,
+.checkIn-text label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#datePicker input {
+  border: none;
+  background-color: transparent;
+  width: auto;
+  text-align: center;
+  font-size: 1rem;
+  width: 100px;
+}
+
+#datePicker input::placeholder {
+  color: #073937;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* guests */
+#guests {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.guest-button-area {
+  display: flex;
+}
+
+#guests input {
+  border: none;
+  background-color: #fcf5eb;
+  text-align: center;
+  font-size: 1rem;
+}
+.guests-label-area {
+  display: flex;
+  gap: 16px;
+}
+
+/* inner button hidden */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.number-btn {
+  font-size: larger;
+}
+
+#search {
+  background-color: #e6b022;
+  border-radius: 100px;
+  margin: 10px;
+  padding: 20px 80px;
 }
 
 /* choice */

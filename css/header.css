@@ -135,7 +135,21 @@ nav > ul > li:last-child .dropdown ul li:hover a {
 
 /* media Query */
 
+@media screen and (max-width: 996px) {
+  nav {
+    padding: 0 16px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  nav > a img {
+    width: 97px;
+  }
+
+  nav button {
+    padding: 8px;
+  }
+
   .main-menu,
   .menu-toggle,
   .mobile-menu {
@@ -146,7 +160,7 @@ nav > ul > li:last-child .dropdown ul li:hover a {
   }
   .menu-btn {
     width: 20px;
-    height: 20px;
+    height: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -203,10 +217,10 @@ nav > ul > li:last-child .dropdown ul li:hover a {
   .mobile-menu .sns-area {
     display: flex;
     justify-content: center;
-    margin: 32px 0;
+    margin: 24px 0;
     gap: 16px;
     border-top: 1px solid rgba(0, 0, 0, 0.75);
-    padding-top: 32px;
+    padding-top: 24px;
   }
   .mobile-menu ul {
     display: flex;
@@ -216,9 +230,10 @@ nav > ul > li:last-child .dropdown ul li:hover a {
     height: 24px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 16px;
   }
 
   .mobile-quick-link {
-    gap: 16px;
+    gap: 12px;
   }
 }
