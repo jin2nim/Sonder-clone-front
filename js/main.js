@@ -166,6 +166,12 @@ document.addEventListener('DOMContentLoaded', function() {
     },
   });
 
+  // gallery-toggle
+  document.getElementById('toggleGallery').addEventListener('click', function() {
+    document.getElementById('hiddenGallery').style.display="grid";
+    this.style.display="none";
+  })
+
   // add -- header
   fetch("header.html")
         .then((response) => response.text())

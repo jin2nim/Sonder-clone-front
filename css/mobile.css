@@ -87,6 +87,9 @@
     grid-area: dubai;
   }
 
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .label-area {
     gap: 40px;
     overflow-x: auto;

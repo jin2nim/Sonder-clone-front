@@ -314,6 +314,14 @@ input[type="number"] {
   margin: 48px 0;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 48px 0;
+  display: none;
+}
+
 /* download */
 #download {
   background-color: #eaece2;
