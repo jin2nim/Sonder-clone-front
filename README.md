@@ -12,9 +12,9 @@ This project is a frontend clone of the original site "Sonder." It features a re
 
 ## Mobile-Screenshots
 
-![Home Page]<img src="./img/index-mobile.png" alt="index Mobile page screenshot">
-![FAQ Page]<img src="./img/FAQ-mobile.png" alt="FAQ Mobile page screenshot">
-![404 Page]<img src="./img/404-mobile.png" alt="404 Mobile page screenshot">
+<img src="./img/index-mobile.png" alt="index Mobile page screenshot">
+<img src="./img/FAQ-mobile.png" alt="FAQ Mobile page screenshot">
+<img src="./img/404-mobile.png" alt="404 Mobile page screenshot">
 
 ## Key Features
 
