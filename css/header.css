@@ -45,6 +45,7 @@ nav > ul > li {
 nav ul img {
   display: block;
   height: 20px;
+  object-fit: cover;
 }
 
 .flag-wrap {
