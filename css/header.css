@@ -52,7 +52,6 @@ nav ul img {
   height: 20px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: yellow;
   display: flex;
   justify-content: center;
 }
