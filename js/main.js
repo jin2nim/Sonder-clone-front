@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // m-slide 초기화
+  
+  // loading-bar
+  const loader = document.querySelector('.loading');
+  loader.style.display = "flex";
+
+  window.addEventListener('load', function(){
+    loader.style.display = 'none';
+  });
+  
+  
+  
+  // m-slide
   var mSlide = new Swiper(".m-slide", {
     loop: true,
     autoplay: {
@@ -154,6 +165,12 @@ document.addEventListener('DOMContentLoaded', function() {
       },
     },
   });
+
+  // gallery-toggle
+  document.getElementById('toggleGallery').addEventListener('click', function() {
+    document.getElementById('hiddenGallery').style.display="grid";
+    this.style.display="none";
+  })
 
   // add -- header
   fetch("header.html")

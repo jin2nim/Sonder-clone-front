@@ -13,7 +13,7 @@ footer {
   flex-direction: column;
 }
 
-.footer-wrap > img {
+.footer-wrap > a > img {
   filter: brightness(0) invert(1);
   width: 129px;
   margin-bottom: 40px;

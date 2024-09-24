@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/loading.css" />
 
     <script src="./js/jquery-3.5.1.min.js"></script>
     <!-- swiper -->
@@ -46,6 +47,9 @@
     <title>Clone - Sonder</title>
   </head>
   <body>
+    <div class="loading">
+      <div class="loading-bar"></div>
+    </div>
     <header id="header"></header>
     <main>
       <section id="main-visual">
@@ -350,7 +354,116 @@
               </a>
             </div>
           </div>
-          <a href="" class="green-button"> View all 45+ cities </a>
+          <button class="green-button" id="toggleGallery">
+            View all 45+ cities
+          </button>
+          <div class="gallery loca-grid" id="hiddenGallery">
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Amsterdam.webp" alt="Amsterdam" />
+                <p class="small">1 neighborhood</p>
+                <h4>Amsterdam</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Atlanta.webp" alt="Atlanta" />
+                <p class="small">1 neighborhood</p>
+                <h4>Atlanta</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Austin.webp" alt="Austin" />
+                <p class="small">2 neighborhood</p>
+                <h4>Austin</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Barcelona.webp" alt="Barcelona" />
+                <p class="small">4 neighborhood</p>
+                <h4>Barcelona</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Boca_Raton.webp" alt="Boca_Raton" />
+                <p class="small">1 neighborhood</p>
+                <h4>Boca_Raton</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Boston.webp" alt="Boston" />
+                <p class="small">1 neighborhood</p>
+                <h4>Boston</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Cannes.webp" alt="Cannes" />
+                <p class="small">1 neighborhood</p>
+                <h4>Cannes</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Chicago.webp" alt="Chicago" />
+                <p class="small">6 neighborhood</p>
+                <h4>Chicago</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Dallas.webp" alt="Dallas" />
+                <p class="small">1 neighborhood</p>
+                <h4>Dallas</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Denver.webp" alt="Denver" />
+                <p class="small">1 neighborhood</p>
+                <h4>Denver</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Detroit.webp" alt="Detroit" />
+                <p class="small">1 neighborhood</p>
+                <h4>Detroit</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Dublin.webp" alt="Dublin" />
+                <p class="small">1 neighborhood</p>
+                <h4>Dublin</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Edinburgh.jpg" alt="Edinburgh" />
+                <p class="small">1 neighborhood</p>
+                <h4>Edinburgh</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/florence.webp" alt="florence" />
+                <p class="small">1 neighborhood</p>
+                <h4>florence</h4>
+              </a>
+            </div>
+            <div class="loca-grid-item">
+              <a href="">
+                <img src="./img/Glasgow.jpg" alt="Glasgow" />
+                <p class="small">1 neighborhood</p>
+                <h4>Glasgow</h4>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <section id="download">

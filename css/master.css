@@ -14,6 +14,11 @@
   font-style: normal;
 }
 
+/* Variables */
+:root {
+  --green-color: #073937;
+}
+
 /* common style-guide */
 
 * {
@@ -24,7 +29,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  color: #073937;
+  color: var(--green-color);
 }
 
 button {
@@ -97,7 +102,7 @@ h5 {
 }
 
 .green-button {
-  background-color: #073937;
+  background-color: var(--green-color);
 }
 
 .yellow-button {
