@@ -51,6 +51,10 @@ main h5 {
   font-size: 1rem;
 }
 
+main p a {
+  border-bottom: thin solid #000;
+}
+
 .text-container {
   border: 5px solid #e25f4b;
   padding: 20px;
