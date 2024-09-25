@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>header</title>
 
     <!-- xe - icon -->
     <link
@@ -13,6 +12,11 @@
 
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/master.css" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>header</title>
   </head>
   <body>
     <header>
@@ -212,13 +216,163 @@
             </div>
           </li>
           <li>
-            <button class="nomal">Check In</button>
+            <button>
+              <input
+                type="checkbox"
+                id="checkin-modal-button"
+                class="peer hidden"
+              />
+              <label for="checkin-modal-button" class="cursor-pointer block"
+                >Check In</label
+              >
+              <div class="peer-checked:block hidden fixed inset-0 modal-popup">
+                <div class="modal-container">
+                  <h3 class="modal-title">
+                    Enter your booking site confirmation number:
+                  </h3>
+                  <label
+                    for="checkin-modal-button"
+                    class="absolute cursor-pointer modal-close-btn"
+                    >&times;</label
+                  >
+                  <input
+                    type="text"
+                    id="booking-code"
+                    placeholder="Booking confirmation code"
+                    required
+                  />
+                  <p class="small text-left">
+                    Booked through Sonder.com? <a href="">Login</a> and visit
+                    the "My Stays" page for your check-in details. Booked
+                    through Expedia? Check your email for instructions on how to
+                    receive your check-in details. <br /><br />
+                    Not what you are looking for?
+                    <a href="">Feel free to contact us.</a>
+                  </p>
+                  <div
+                    class="yellow-button login-btn"
+                    tabindex="0"
+                    role="button"
+                    onclick="handleSubmit()"
+                  >
+                    Next
+                  </div>
+                  <p>New to Sonder? <a href="">Create an account »</a></p>
+                  <p>Forgot your password? <a href="">Reset password »</a></p>
+                </div>
+              </div>
+            </button>
           </li>
           <li>
-            <button class="nomal">Log in</button>
+            <button>
+              <input
+                type="checkbox"
+                id="login-modal-button"
+                class="peer hidden"
+              />
+              <label for="login-modal-button" class="cursor-pointer block"
+                >Log in</label
+              >
+              <div class="peer-checked:block hidden fixed inset-0 modal-popup">
+                <div class="modal-container">
+                  <h3 class="modal-title">Log in</h3>
+                  <label
+                    for="login-modal-button"
+                    class="absolute cursor-pointer modal-close-btn"
+                    >&times;</label
+                  >
+                  <input
+                    type="email"
+                    id="login-email"
+                    placeholder="Email address"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="login-password"
+                    placeholder="Password"
+                    required
+                  />
+                  <p>Forgot your password? <a href="">Reset password</a></p>
+                  <div
+                    class="yellow-button login-btn"
+                    tabindex="0"
+                    role="button"
+                    onclick="handleSubmit()"
+                  >
+                    Log in
+                  </div>
+                  <p>Or</p>
+                  <div class="modal-login-btn">
+                    <img src="./img/google_color.svg" alt="google-logo" />
+                    Log in with google
+                  </div>
+                  <div class="modal-login-btn">
+                    <img
+                      src="./img/linkedin_large_color.svg"
+                      alt="linkedIn-logo"
+                    />Log in with linkedIn
+                  </div>
+                  <div class="modal-login-btn">
+                    <img src="./img/apple_color.svg" alt="apple-logo" />
+                    Log in with apple
+                  </div>
+                </div>
+              </div>
+            </button>
           </li>
           <li>
-            <button class="nomal bold">Sign up</button>
+            <button>
+              <input
+                type="checkbox"
+                id="signup-modal-button"
+                class="peer hidden"
+              />
+              <label for="signup-modal-button" class="cursor-pointer block bold"
+                >Sign up</label
+              >
+              <div class="peer-checked:block hidden fixed inset-0 modal-popup">
+                <div class="modal-container">
+                  <h3 class="modal-title">
+                    Sign up for access to member pricing
+                  </h3>
+                  <label
+                    for="signup-modal-button"
+                    class="absolute cursor-pointer modal-close-btn"
+                    >&times;</label
+                  >
+                  <input
+                    type="email"
+                    id="login-email"
+                    placeholder="Email address"
+                    required
+                  />
+                  <div
+                    class="yellow-button login-btn"
+                    tabindex="0"
+                    role="button"
+                    onclick="handleSubmit()"
+                  >
+                    Continue
+                  </div>
+                  <p>or continue with</p>
+                  <div class="modal-login-btn">
+                    <img src="./img/google_color.svg" alt="google-logo" />
+                    Google
+                  </div>
+                  <div class="modal-login-btn">
+                    <img src="./img/apple_color.svg" alt="apple-logo" />
+                    Apple
+                  </div>
+
+                  <p class="small">
+                    By providing your email address, you agree to <br />
+                    our <a href="">Privacy Policy</a>and
+                    <a href="">Terms of Service</a>
+                  </p>
+                </div>
+              </div>
+            </button>
           </li>
           <li>
             <button>
@@ -237,6 +391,7 @@
             </div>
           </li>
         </ul>
+
         <div class="mobile-menu-wrap" id="mobileWarp">
           <input type="checkbox" id="menuToggle" class="menu-toggle" />
           <label for="menuToggle" class="menu-btn">
@@ -253,13 +408,179 @@
               <img src="./img/logo.svg" alt="logo" />
               <ul>
                 <li>
-                  <button class="nomal">Check In</button>
+                  <button>
+                    <input
+                      type="checkbox"
+                      id="m-checkin-modal-button"
+                      class="peer hidden"
+                    />
+                    <label
+                      for="m-checkin-modal-button"
+                      class="cursor-pointer block"
+                      >Check In</label
+                    >
+                    <div
+                      class="peer-checked:block hidden fixed inset-0 modal-popup"
+                    >
+                      <div class="modal-container">
+                        <h3 class="modal-title">
+                          Enter your booking site confirmation number:
+                        </h3>
+                        <label
+                          for="m-checkin-modal-button"
+                          class="absolute cursor-pointer modal-close-btn"
+                          >&times;</label
+                        >
+                        <input
+                          type="text"
+                          id="booking-code"
+                          placeholder="Booking confirmation code"
+                          required
+                        />
+                        <p>
+                          Booked through Sonder.com? <a href="">Login</a> and
+                          visit the "My Stays" page for your check-in details.
+                          Booked through Expedia? Check your email for
+                          instructions on how to receive your check-in details.
+                          <br /><br />
+                          Not what you are looking for?
+                          <a href="">Feel free to contact us.</a>
+                        </p>
+                        <div
+                          class="yellow-button login-btn"
+                          tabindex="0"
+                          role="button"
+                          onclick="handleSubmit()"
+                        >
+                          Next
+                        </div>
+                        <p>New to Sonder? <a href="">Create an account »</a></p>
+                        <p>
+                          Forgot your password? <a href="">Reset password »</a>
+                        </p>
+                      </div>
+                    </div>
+                  </button>
                 </li>
                 <li>
-                  <button class="nomal">Log In</button>
+                  <button>
+                    <input
+                      type="checkbox"
+                      id="m-login-modal-button"
+                      class="peer hidden"
+                    />
+                    <label
+                      for="m-login-modal-button"
+                      class="cursor-pointer block"
+                      >Log in</label
+                    >
+                    <div
+                      class="peer-checked:block hidden fixed inset-0 modal-popup"
+                    >
+                      <div class="modal-container">
+                        <h3 class="modal-title">Log in</h3>
+                        <label
+                          for="m-login-modal-button"
+                          class="absolute cursor-pointer modal-close-btn"
+                          >&times;</label
+                        >
+                        <input
+                          type="email"
+                          id="login-email"
+                          placeholder="Email address"
+                          required
+                        />
+                        <input
+                          type="text"
+                          id="login-password"
+                          placeholder="Password"
+                          required
+                        />
+                        <p>
+                          Forgot your password? <a href="">Reset password</a>
+                        </p>
+                        <div
+                          class="yellow-button login-btn"
+                          tabindex="0"
+                          role="button"
+                          onclick="handleSubmit()"
+                        >
+                          Log in
+                        </div>
+                        <p>Or</p>
+                        <div class="modal-login-btn">
+                          <img src="./img/google_color.svg" alt="google-logo" />
+                          Log in with google
+                        </div>
+                        <div class="modal-login-btn">
+                          <img
+                            src="./img/linkedin_large_color.svg"
+                            alt="linkedIn-logo"
+                          />Log in with linkedIn
+                        </div>
+                        <div class="modal-login-btn">
+                          <img src="./img/apple_color.svg" alt="apple-logo" />
+                          Log in with apple
+                        </div>
+                      </div>
+                    </div>
+                  </button>
                 </li>
                 <li>
-                  <button class="nomal bold">Sign up</button>
+                  <button>
+                    <input
+                      type="checkbox"
+                      id="m-signup-modal-button"
+                      class="peer hidden"
+                    />
+                    <label
+                      for="m-signup-modal-button"
+                      class="cursor-pointer block bold"
+                      >Sign up</label
+                    >
+                    <div
+                      class="peer-checked:block hidden fixed inset-0 modal-popup"
+                    >
+                      <div class="modal-container">
+                        <h3 class="modal-title">
+                          Sign up for access to member pricing
+                        </h3>
+                        <label
+                          for="m-signup-modal-button"
+                          class="absolute cursor-pointer modal-close-btn"
+                          >&times;</label
+                        >
+                        <input
+                          type="email"
+                          id="login-email"
+                          placeholder="Email address"
+                          required
+                        />
+                        <div
+                          class="yellow-button login-btn"
+                          tabindex="0"
+                          role="button"
+                          onclick="handleSubmit()"
+                        >
+                          Continue
+                        </div>
+                        <p>or continue with</p>
+                        <div class="modal-login-btn">
+                          <img src="./img/google_color.svg" alt="google-logo" />
+                          Google
+                        </div>
+                        <div class="modal-login-btn">
+                          <img src="./img/apple_color.svg" alt="apple-logo" />
+                          Apple
+                        </div>
+                        <p>
+                          By providing your email address, you agree to
+                          <br />our <a href="">Privacy Policy</a>and
+                          <a href="">Terms of Service</a>
+                        </p>
+                      </div>
+                    </div>
+                  </button>
                 </li>
                 <li>
                   <button class="nomal">USD ($)</button>

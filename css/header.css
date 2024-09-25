@@ -5,9 +5,8 @@
 
 header {
   width: 100%;
-  background-color: #fffbf2;
+  background-color: var(--light-yellow);
   min-height: 57px;
-  position: sticky;
   z-index: 99;
   display: flex;
   justify-content: space-between;
@@ -133,6 +132,83 @@ nav > ul > li:last-child .dropdown ul li:hover a {
   display: none;
 }
 
+/* modal-container */
+
+.modal-popup {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+}
+
+.modal-container {
+  width: 80%;
+  max-width: 500px;
+  background-color: var(--light-yellow);
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-container input {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border-bottom: 1px solid #073937;
+}
+
+.modal-title {
+  width: 70%;
+  font-weight: 600;
+}
+
+.yellow-button.login-btn {
+  opacity: 0.5;
+  width: 100%;
+  margin-top: 12px;
+  color: #073937 !important;
+}
+
+.modal-container input:valid ~ .login-btn {
+  opacity: 1;
+}
+
+.modal-login-btn {
+  width: 100%;
+  padding: 20px;
+  border-radius: 100px;
+  background-color: #fcf5eb;
+  display: grid;
+  grid-template-columns: 24px auto;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.modal-login-btn img {
+  margin: 0 !important;
+  object-fit: cover;
+  height: 20px !important;
+}
+
+.modal-close-btn {
+  top: 15px;
+  right: 25px;
+  font-size: 2rem;
+}
+
+.modal-container a {
+  border-bottom: thin solid #073937;
+}
+
 /* media Query */
 
 @media screen and (max-width: 996px) {
@@ -208,7 +284,7 @@ nav > ul > li:last-child .dropdown ul li:hover a {
     width: 100%;
     height: 100vh;
     position: absolute;
-    background-color: #fffbf2;
+    background-color: var(--light-yellow);
     top: 0;
     left: 0;
     padding: 40px;

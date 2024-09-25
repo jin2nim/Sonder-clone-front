@@ -411,7 +411,7 @@ input[type="number"] {
 
 /* stay */
 #stay {
-  background-color: #fffbf2;
+  background-color: var(--light-yellow);
   padding: 80px 0 64px 0;
 }
 
@@ -641,7 +641,7 @@ body:has(#tab5:checked) #tab-content-5 {
 /* story */
 
 #story {
-  background-color: #fffbf2;
+  background-color: var(--light-yellow);
   padding: 50px 0;
 }
 
