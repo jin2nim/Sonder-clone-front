@@ -105,14 +105,14 @@
   background-color: #fcf5eb;
 }
 
-#city,
+#city-type,
 #datePicker,
 #guests,
 #search {
   padding: 20px;
 }
 
-#city {
+#city-type {
   position: relative;
   border-radius: 100px 0 0 100px;
 }
@@ -150,7 +150,7 @@
 
 /* city-text option */
 body:has(.city-option-container.active) {
-  #city {
+  #city-type {
     background-color: #073937;
   }
   .city-text {
