@@ -54,17 +54,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // DatePicker
   // flatpickr
+  
   function initializeFlatpickr(showMonthsCount) {
-    flatpickr("#datepicker", {
-      mode: "range", 
-      dateFormat: "Y-m-d", 
+    flatpickr("#checkin-input, #checkout-input", { // 입력 필드 연결
+      mode: "range",
+      dateFormat: "Y-m-d",
       showMonths: showMonthsCount,
       minDate: "today",
       onChange: function(selectedDates, dateStr, instance) {
         if (selectedDates.length === 2) {
           const checkinDate = selectedDates[0];
           const checkoutDate = selectedDates[1];
-          
+  
           document.getElementById('checkin-input').value = checkinDate.toLocaleDateString();
           document.getElementById('checkout-input').value = checkoutDate.toLocaleDateString();
         }

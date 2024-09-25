@@ -2,11 +2,16 @@
   background-color: #fcf5eb;
   padding: 20px;
   width: auto !important;
+  margin-top: 10px;
+}
+.flatpickr-calendar.open {
+  z-index: 80;
 }
 
 .flatpickr-day.selected {
   background-color: #073937 !important;
   border-color: #073937 !important;
+  color: #fcf5eb !important;
 }
 
 .flatpickr-day,
@@ -24,7 +29,7 @@
 }
 
 .flatpickr-day.flatpickr-disabled {
-  color: rgba(57, 57, 57, 0.3);
+  color: rgba(57, 57, 57, 0.3) !important;
 }
 
 .dayContainer + .dayContainer {
