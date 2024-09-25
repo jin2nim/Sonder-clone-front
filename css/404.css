@@ -12,7 +12,7 @@ header {
 
 nav {
   display: flex;
-  padding: 20px;
+  padding: 10px 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -29,12 +29,16 @@ nav > i {
   font-size: 1.35rem;
 }
 
+nav a h4 {
+  color: #000;
+}
+
 main {
   display: flex;
   flex-direction: column;
   width: 33.333333%;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 120px;
   text-align: center;
   gap: 20px;
 }
