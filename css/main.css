@@ -277,6 +277,14 @@ input[type="number"] {
   gap: 24px 8.7%;
 }
 
+.loca-grid.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 48px 0;
+  display: none;
+}
+
 .loca-grid-item a {
   display: flex;
   flex-direction: column;
@@ -312,14 +320,6 @@ input[type="number"] {
 .green-button {
   align-self: center;
   margin: 48px 0;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin: 48px 0;
-  display: none;
 }
 
 /* download */

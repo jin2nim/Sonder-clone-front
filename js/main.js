@@ -103,6 +103,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+  // video play
+  const video = document.querySelector('.videoPlay');
+  const videoStill = document.querySelector('.videoStill')
+
+  video.addEventListener('canplay', function(){
+    videoStill.style.display = "none";
+    video.style.display = "block";
+  })
+
   // tabSlide
   var tabSlide = new Swiper(".tab-slide", {
     slidesPerView: 2,

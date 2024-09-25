@@ -79,6 +79,9 @@
       "newyork newyork"
       "los montreal";
   }
+  .loca-grid.gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .newyork {
     grid-column: span 2;
     grid-area: newyork;
@@ -87,9 +90,6 @@
     grid-area: dubai;
   }
 
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .label-area {
     gap: 40px;
     overflow-x: auto;
