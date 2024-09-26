@@ -38,6 +38,10 @@
   box-shadow: none;
 }
 
+.dayContainer {
+  justify-content: start;
+}
+
 .flatpickr-months,
 .flatpickr-weekdays {
   gap: 60px;
