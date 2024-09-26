@@ -3,6 +3,8 @@
   padding: 20px;
   width: auto !important;
   margin-top: 10px;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
 }
 .flatpickr-calendar.open {
   z-index: 80;
